@@ -1,0 +1,13 @@
+Confusion Matrix Values
+Metric,Value
+True Positive (TP),2579
+False Negative (FN),0
+False Positive (FP),0
+True Negative (TN),2719
+
+Performance Metrics
+Metric,Value
+Precision,1.0
+Recall,1.0
+F1 Score,1.0
+Accuracy,1.0
