@@ -8,9 +8,8 @@ This project aims to accurately classify Global Navigation Satellite System (GNS
 3. [Methodology](#methodology)
 4. [Model: XGBoost](#model-xgboost)
 5. [Results](#results)
-6. [Insights & Evaluation](#insights--evaluation)
-7. [Future Enhancements](#future-enhancements)
-8. [Conclusion](#conclusion)
+6. [Confusion Matrix](#confusion-matrix)
+7. [Conclusion](#conclusion)
 
 ## Introduction
 
@@ -33,9 +32,9 @@ Correct classification of these signals is crucial in improving GNSS-based appli
 | XGBoost        | Gradient boosting classifier                 |
 | OS             | File management for exports                  |
 
-## 📊 Methodology
+## Methodology
 
-### ✅ Step-by-Step Pipeline:
+### Step-by-Step Pipeline:
 1. **Data Collection** – Separate datasets for LOS and NLOS with signal parameters.
 2. **Data Preprocessing**
    - Removal of non-essential columns (e.g., PRN)
@@ -51,7 +50,7 @@ Correct classification of these signals is crucial in improving GNSS-based appli
 6. **Results Export**
    - Evaluation results and confusion matrix saved to CSV
 
-## ⚙️ Model: XGBoost
+## Model: XGBoost
 
 XGBoost (Extreme Gradient Boosting) is used due to:
 - High performance on tabular data
@@ -66,3 +65,19 @@ XGBoost (Extreme Gradient Boosting) is used due to:
 | Precision | 1.00  |
 | Recall    | 1.00  |
 | F1-Score  | 1.00  |
+
+## Confusion Matrix
+
+![image](https://github.com/user-attachments/assets/864bceb6-03f5-454a-b588-90e21031c727)
+
+![image](https://github.com/user-attachments/assets/f859128c-d0c9-46e1-bccd-ecf01cfe95c6)
+
+
+## Insights & Evaluation
+-The features (SNR, Elevation, Azimuth) strongly distinguish LOS from NLOS.
+-100% accuracy indicates clear class separation but may suggest potential overfitting.
+-Used K-Fold Cross Validation to verify model generalization.
+
+## Conclusion
+This project proves the capability of machine learning, especially XGBoost, in classifying GNSS signal visibility conditions with high accuracy. It sets the foundation for further real-world deployment and system integration.
+
