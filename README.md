@@ -74,9 +74,9 @@ XGBoost (Extreme Gradient Boosting) is used due to:
 
 
 ## Insights & Evaluation
--The features (SNR, Elevation, Azimuth) strongly distinguish LOS from NLOS.
--100% accuracy indicates clear class separation but may suggest potential overfitting.
--Used K-Fold Cross Validation to verify model generalization.
+- The features (SNR, Elevation, Azimuth) strongly distinguish LOS from NLOS.
+- 100% accuracy indicates clear class separation but may suggest potential overfitting.
+- Used K-Fold Cross Validation to verify model generalization.
 
 ## Conclusion
 This project proves the capability of machine learning, especially XGBoost, in classifying GNSS signal visibility conditions with high accuracy. It sets the foundation for further real-world deployment and system integration.
